@@ -6,73 +6,92 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
 </head>
 <body>
-	<section class="section-style1">
-		<div class="container">
-			<div class="greeting-wrapper">
-				<h1>Hi, I'm Zaidan!</h1>
-				<h3><a href="#">My Projects</a></h3>
-			</div>
-			<div class="intro-wrapper">
-				<div class="nav-wrapper">
-					<div class="dots">
-						<div id="dot-close" class="browser-dot"></div>
-						<div id="dot-min" class="browser-dot"></div>
-						<div id="dot-max" class="browser-dot"></div>
+	<div class="main-container">
+		<header class="mainColor">
+			<div class="container no-padding">
+				<div class="greeting-wrapper">
+					<h1>Hi, I'm Zaidan!</h1>
+					<h3><a href="#">My Projects</a></h3>
+				</div>
+				<div class="intro-wrapper">
+					<div class="nav-wrapper darkColor">
+						<div class="dots">
+							<div id="dot-close" class="browser-dot"></div>
+							<div id="dot-min" class="browser-dot"></div>
+							<div id="dot-max" class="browser-dot"></div>
+						</div>
+						<ul id="navigation" >
+							<li><a href="#about">About</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
 					</div>
-					<ul id="navigation" >
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div>
-				<div class="left-column">
-					<img id="profile-pic" src="assets/img/profile.png">
-					<a href="https://www.reddit.com/r/sololeveling/comments/h0rrgm/sung_jinwoo_igris_chibi_art_by_%E6%98%8E%E8%8F%9C/" target="_blank">Image Source</a>
-				</div>
-				<div class="right-column">
-					<div id="preview">
-						<h3>My Summary</h3>
-						<p>Simple description of me and what I do</p>
+					<div class="left-column">
+						<img id="profile-pic" src="assets/img/profile.png">
+						<a href="https://www.reddit.com/r/sololeveling/comments/h0rrgm/sung_jinwoo_igris_chibi_art_by_%E6%98%8E%E8%8F%9C/" target="_blank">Image Source</a>
+					</div>
+					<div class="right-column">
+						<div id="preview">
+							<h3>Preview</h3>
+							<p>Simple description of what I do</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</header>
+		<div class="main-content">
+			<section id="about" class="white">
+				<div class="container">
+					<div class="wrapper about-me">
+						<h3 class="text-center">More about me</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. </p>
 
-	<section class="section-style2">
-		<div class="container">
-			<h2>About</h2>
-		</div>
-	</section>
-
-	<section class="section-style1">
-		<div class="container">
-			<h2>Portfolio</h2>
-		</div>
-	</section>
-
-	<section class="section-style2">
-		<div class="container">
-			<h2>Contact</h2>
-		</div>
-	</section>
-
-	<section class="section-style1 footer">
-		<div class="container">
-			<div class="content">
-				<div class="box">
-					<h4>Box 1</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. </p>
+						<div class="social-link">
+							<p>linked in</p>
+							<p>github</p>
+							<p>ig</p>
+							<p>twitter</p>
+						</div>
+					</div>
 				</div>
-				<div class="box">
-					<h4>Box 2</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</section>
+
+			<section class="mainColor">
+				<div class="container">
+					<div class="wrapper">
+						<h3 class="text-center">My Past Project</h3>
+						<div class="card">
+							<div class="card-item">
+								<h4>Project 1</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							</div>
+							<div class="card-item">
+								<h4>Project 2</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+							<div class="card-item">
+								<h4>Project 3</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							</div>
+						</div>
+						
+					</div>
 				</div>
-				<div class="box">
-					<h4>Box 3</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+			</section>
+
+			<section class="white">
+				<div class="container">
+					<h3 class="text-center">Get in touch</h3>
 				</div>
-			</div>
+			</section>
 		</div>
-	</section>
+		<footer class="darkColor">
+			<p class="text-center">&copy; 2020 All rights reserved</p>
+		</footer>
+	</div>
 </body>
 </html>

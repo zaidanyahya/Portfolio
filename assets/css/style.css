@@ -3,9 +3,9 @@
 
 /* General */
 :root{
-	--mainColor:#eaeaea;
-	--secondaryColor:#fff;
-	--thirdColor:#cacaca;
+	--mainColor:#eef4f8;
+	--white:#fff;
+	--darkColor:#343434;
 
 	--borderColor:#c1c1c1;
 
@@ -44,20 +44,54 @@ a{
 	color: #59f;
 }
 
+p {
+	text-align: justify;
+}
+
 ul{
 	list-style: none;
 }
 
-.section-style1{
-	background-color: var(--mainColor);
-	border-bottom: 1px solid var(--borderColor);
+header, section, footer{
 	overflow: auto;
 }
 
-.section-style2{
-	background-color: var(--secondaryColor);
-	border-bottom: 1px solid var(--borderColor);
-	overflow: auto;
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-justify{
+	text-align: justify;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+ 	min-height: 100vh;
+}
+
+.main-content{
+	flex:1;
+}
+
+.mainColor{
+	background-color: var(--mainColor);
+}
+
+.white{
+	background-color: var(--white);
+}
+
+.darkColor {
+	background-color: var(--darkColor);
+}
+
+.darkColor p{
+	color:#fff;
 }
 
 .container{
@@ -66,8 +100,31 @@ ul{
 	padding: 10px;
 }
 
+.no-padding {
+	padding: 0;
+}
+
+
+.flex-box .box{
+	margin:0.5em;
+	padding: 10px;
+	flex-basis: 30%;
+	text-align: justify;
+}
+
+.card .card-item{
+	margin:0.5em;
+	padding: 2em 1em 3em 1em !important;
+	flex-basis: 30%;
+	text-align: justify;
+	border: solid 1px;
+}
 
 /* Intro */
+
+header{
+	border-bottom: 2px solid var(--darkColor);
+}
 
 .greeting-wrapper{
 	display: grid;
@@ -79,8 +136,9 @@ ul{
 
 .intro-wrapper{
 	display: grid;
-	background-color: var(--secondaryColor);
-	border: 2px solid var(--borderColor);
+	background-color: var(--white);
+	border: 2px solid var(--darkColor);
+	border-bottom: 0;
 	border-radius: 8px 8px 0 0;
 
 	grid-template-columns: 1fr 1fr;
@@ -93,9 +151,7 @@ ul{
 }
 
 .intro-wrapper .nav-wrapper{
-	background-color: var(--mainColor);
-	border-bottom: 1px solid var(--mainColor);
-	border-radius: 8px 8px 0 0;
+	background-color: var(--darkColor);
 	grid-area: nav-wrapper;
 
 	display: flex;
@@ -132,6 +188,14 @@ ul{
 	margin-right: 5px;
 }
 
+#navigation a{
+	color: #fff;
+	font-weight: bold;
+}
+
+#navigation a:hover{
+	color: #FC6058;
+}
 
 .intro-wrapper .left-column{
 	grid-area: intro-left;
@@ -146,7 +210,7 @@ ul{
 	margin:0 auto;
 	border: 1px solid var(--borderColor);
 	object-fit: cover;
-	width: 65%;
+	width: 280px;
 }
 
 .intro-wrapper .right-column{
@@ -173,8 +237,11 @@ ul{
 
 
 
-
-
+/* About */
+.social-link{
+	display: flex;
+	justify-content: space-between;
+}
 
 
 @media(min-width: 768px){
@@ -182,9 +249,9 @@ ul{
 		display: grid;
 		width: 80%;
 	}
-
-	#profile-pic{
-		width: 50%;
+	.about-me {
+		width: 60%;
+		margin:0 auto;
 	}
 
 	.intro-wrapper{
@@ -196,13 +263,24 @@ ul{
 		;
 	}
 
-
-	.footer .container .content{
+	.flex-box{
 		display:flex;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
-	
+	.flex-box .box{
+		margin:0.2em;	
+	}
+
+	.card{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.card .card-item{
+		margin:0.2em;
+	}
+
 }
 
 .box{
