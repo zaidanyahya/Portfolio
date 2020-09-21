@@ -35,14 +35,14 @@
 					<div class="right-column">
 						<div id="preview">
 							<h3>What I do</h3>
-							<p>Currently, I'm studying at Departments of Informatics Engineering, National Institute of Technology, Nara College, Japan</p>
+							<p class="text-left">Currently, I'm studying at Departments of Informatics Engineering, National Institute of Technology, Nara College, Japan</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 		<div class="main-content">
-			<section id="about" class="white">
+			<section id="about" class="mainColor">
 				<div class="container">
 					<div class="wrapper about-me">
 						<h3 class="text-center">More about me</h3>
@@ -58,7 +58,7 @@
 				</div>
 			</section>
 
-			<section class="mainColor">
+			<!--<section class="mainColor">
 				<div class="container">
 					<div class="wrapper">
 						<h3 class="text-center">My Project</h3>
@@ -79,17 +79,43 @@
 						
 					</div>
 				</div>
-			</section>
+			</section>-->
 
 			<section class="white">
 				<div class="container">
 					<h3 class="text-center">Contact</h3>
+					<form id="contact-form" action="http://portfolio.zaidan.epizy.com/contact-form.php" method="POST">
+						<div class="dots">
+							<div id="dot-close" class="browser-dot"></div>
+							<div id="dot-min" class="browser-dot"></div>
+							<div id="dot-max" class="browser-dot"></div>
+						</div>
+						<div class="form-item">
+							<label>Name</label>
+							<input type="text" name="name">
+						</div>
+						<div class="form-item">
+							<label>Subject</label>
+							<input type="text" name="subject">
+						</div>
+						<div class="form-item">
+							<label>Email</label>
+							<input type="email" name="email">
+						</div>
+						<div class="form-item">
+							<label>Message</label>
+							<textarea name="message"></textarea>
+						</div>
+						<div class="form-item">
+							<input type="submit" value="Send"> 
+						</div>
+					</form>
+					<br>
 					<div class="social-link">
-						<a href="#"><i class="fas fa-2x fa-envelope-square"></i></a>
-						<a href="#"><i class="fab fa-2x fa-linkedin"></i></a>
-						<a href="#"><i class="fab fa-2x fa-github"></i></a>
-						<a href="#"><i class="fab fa-2x fa-instagram"></i></a>
-						<a href="#"><i class="fab fa-2x fa-twitter"></i></a>
+						<a target="_blank" href="https://www.linkedin.com/in/zaidan-yahya/"><i class="fab fa-2x fa-linkedin"></i></a>
+						<a target="_blank" href="https://github.com/zaidanyahya"><i class="fab fa-2x fa-github"></i></a>
+						<a target="_blank" href="https://instagram.com/zaidan_yahya"><i class="fab fa-2x fa-instagram"></i></a>
+						<a target="_blank" href="https://twitter.com/zaidanyahya28"><i class="fab fa-2x fa-twitter"></i></a>
 					</div>
 				</div>
 			</section>

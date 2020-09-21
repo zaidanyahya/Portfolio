@@ -64,6 +64,10 @@ header, section, footer{
 	text-align: left;
 }
 
+.text-right{
+	text-align: right;
+}
+
 .text-justify{
 	text-align: justify;
 }
@@ -169,7 +173,7 @@ header{
 	padding: 10px;
 }
 
-.intro-wrapper .nav-wrapper .dots{
+.dots{
 	display: flex;
 	padding: 10px;
 }
@@ -241,7 +245,7 @@ header{
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
-	margin: 5px;
+	margin: 3px;
 }
 
 
@@ -254,6 +258,61 @@ header{
 .social-link a{
 	color: var(--darkColor);
 	margin:0.5em;
+}
+
+
+
+/* Contact Form */
+
+#contact-form{
+	display: block;
+	margin:0 auto;
+	max-width: 600px;
+	padding: 0.5em;
+	border-radius: 8px;
+	background-color: var(--darkColor);
+}
+
+.form-item{
+	padding: 0.6em;
+	margin: auto auto;
+}
+
+label{
+	font-family: var(--headingsFont);
+	font-size: 20px;
+	color: white;
+}
+
+.form-item input, .form-item textarea{
+	width: 100%;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-radius:5px;
+	border: none;
+	padding-bottom: 10px;
+}
+
+.form-item textarea{
+	min-height: 180px;
+}
+
+input[type=submit]{
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+	border-radius: 5px;	
+	border: 2px solid white;
+
+	font-size: 20px;
+	font-family: var(--headingsFont);
+}
+
+input[type=submit]:hover{
+	color: white;
+	background-color: var(--darkColor);
+	transition: 0.2s;
 }
 
 @media(min-width: 768px){
@@ -291,6 +350,10 @@ header{
 
 	.card .card-item{
 		margin:0.2em;
+	}
+
+	#contact-form{
+		width: 600px;
 	}
 
 }
