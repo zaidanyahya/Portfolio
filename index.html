@@ -88,7 +88,7 @@
 			<section id="contact" class="white">
 				<div class="container">
 					<h3 class="text-center">Contact</h3>
-					<form id="contact-form" action="http://portfolio.zaidan.epizy.com/contact/submit.php" method="GET">
+					<form id="contact-form" name="contactForm" action="http://portfolio.zaidan.epizy.com/contact/submit.php" method="GET" onsubmit="return(validate());">
 						<div class="dots">
 							<div id="dot-close" class="browser-dot"></div>
 							<div id="dot-min" class="browser-dot"></div>
@@ -96,19 +96,19 @@
 						</div>
 						<div class="form-item">
 							<label>Name</label>
-							<input type="text" name="name">
+							<input type="text" name="name" required>
 						</div>
 						<div class="form-item">
 							<label>Subject</label>
-							<input type="text" name="subject">
+							<input type="text" name="subject" required>
 						</div>
 						<div class="form-item">
 							<label>Email</label>
-							<input type="email" name="email">
+							<input type="email" name="email" required>
 						</div>
 						<div class="form-item">
 							<label>Message</label>
-							<textarea name="message"></textarea>
+							<textarea name="message" required></textarea>
 						</div>
 						<div class="form-item">
 							 <div class="g-recaptcha" data-sitekey="6LfjaM8ZAAAAAFqMXylG-z3zMBgFczXQcVN4DR_1"></div>
@@ -125,5 +125,6 @@
 			<h6 class="text-center">&copy; 2020 All rights reserved</h6>
 		</footer>
 	</div>
+	<script type="text/javascript" src="assets/js/form-validation.js"></script>
 </body>
 </html>
