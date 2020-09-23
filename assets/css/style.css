@@ -105,7 +105,8 @@ header, section, footer{
 .container{
 	margin: 0 auto;
 	width: 90%;
-	padding: 10px;
+	padding-bottom: 30px;
+	padding-top: 10px; 
 }
 
 .no-padding {

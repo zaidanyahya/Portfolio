@@ -5,6 +5,7 @@
 	<title>Zaidan Yahya | ザイダン ヤーヤ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
 	<link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 	<div class="main-container">
@@ -44,10 +45,11 @@
 					<div class="wrapper about-me">
 						<h3 class="text-center">More about me</h3>
 						<p>I've been learning programming since 15 years old, but 
-						I don't have any experience on building real world project.</p>
+						I don't have any experience on building real world project. 
+						My first programming language is Pascal and since then, I've learn C++, PHP, Python, and Java.</p>
 
-						<p>While I studying on my college, I've been thinking to build 
-						my own project to expand my knowledge. My first programming language is Pascal and since then, I've learn C++, PHP, Python, and Java.</p>
+						<p>While I'm studying at my college, I've been thinking to build 
+						my own project to expand my knowledge and to learn new skills.</p>
 						
 						<h5 class="text-center no-padding">Find me on Social Media</h5>
 						<div class="social-link">
@@ -86,7 +88,7 @@
 			<section id="contact" class="white">
 				<div class="container">
 					<h3 class="text-center">Contact</h3>
-					<form id="contact-form" action="http://portfolio.zaidan.epizy.com/contact-form.php" method="POST">
+					<form id="contact-form" action="http://portfolio.zaidan.epizy.com/contact/submit.php" method="GET">
 						<div class="dots">
 							<div id="dot-close" class="browser-dot"></div>
 							<div id="dot-min" class="browser-dot"></div>
@@ -107,6 +109,9 @@
 						<div class="form-item">
 							<label>Message</label>
 							<textarea name="message"></textarea>
+						</div>
+						<div class="form-tem">
+							 <div class="g-recaptcha" data-sitekey="6LfjaM8ZAAAAAFqMXylG-z3zMBgFczXQcVN4DR_1"></div>
 						</div>
 						<div class="form-item">
 							<input type="submit" value="Send"> 
