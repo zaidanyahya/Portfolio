@@ -221,9 +221,9 @@ header{
 #profile-pic {
 	display: block;
 	margin:0 auto;
-	border: 1px solid var(--borderColor);
+	border-radius: 8px;
 	object-fit: cover;
-	width: 280px;
+	width: 260px;
 }
 
 .intro-wrapper .right-column{
@@ -323,6 +323,10 @@ input[type=submit]:hover{
 	.about-me {
 		width: 60%;
 		margin:0 auto;
+	}
+
+	#profile-pic{
+		width: 300px;
 	}
 
 	.intro-wrapper{
